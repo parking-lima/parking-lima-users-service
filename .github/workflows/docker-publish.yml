@@ -46,4 +46,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/parking-lima/parking-lima-users-service:latest
+          tags: |
+            ghcr.io/parking-lima/parking-lima-users-service:latest
+            ghcr.io/parking-lima/parking-lima-users-service:sha-${{ github.sha }}
